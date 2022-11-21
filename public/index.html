@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="OpenSea, the largest NFT marketplace" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="https://static.opensea.io/og-images/Metadata-Image.png" property="og:image">
+  <meta content="https://opensea.io/" property="og:url">
+  <meta
+    content="OpenSea is the world's first and largest web3 marketplace for NFTs and crypto collectibles. Browse, create, buy, sell, and auction NFTs using OpenSea today."
+    property="og:description">
+  <meta content="en_US" property="og:locale">
+  <meta content="OpenSea" property="og:site_name">
+  <meta
+    content="OpenSea is the world's first and largest web3 marketplace for NFTs and crypto collectibles. Browse, create, buy, sell, and auction NFTs using OpenSea today."
+    name="description">
+  <meta name="next-head-count" content="34">
+  <meta content="OpenSea" name="author">
+  <meta content="website" property="og:type">
+  <meta content="OpenSea" property="og:site_name">
+  <meta content="k6emmotm6q3vssedj9lxwufgucfuxi" name="facebook-domain-verification">
+  <meta content="OpenSea" name="apple-mobile-web-app-title">
+  <meta content="OpenSea" name="application-name">
+  <meta content="#da532c" name="msapplication-TileColor">
+  <meta content="https://static.opensea.io/favicon/browserconfig.xml" name="msapplication-config">
+  <meta content="#04111D" name="theme-color">
+  <link rel="preload" as="image" href="/static/images/logos/opensea.svg">
+  <link rel="preload" as="image" href="/static/images/categories/art.png">
+  <link rel="preload" as="image" href="/static/images/categories/collectibles.png">
+  <link rel="preload" as="image" href="/static/images/categories/domain-names.png">
+  <link rel="preload" as="image" href="/static/images/categories/music.png">
+  <link rel="preload" as="image" href="/static/images/categories/photography-category.png">
+  <link rel="preload" as="image" href="/static/images/categories/sports.png">
+  <link rel="preload" as="image" href="/static/images/categories/trading-cards.png">
+  <link rel="preload" as="image" href="/static/images/categories/utility.png">
+  <link rel="preload" as="image" href="/static/images/categories/virtual-worlds.png">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://opensea.io" hreflang="en" rel="alternate">
+  <link href="https://opensea.io/zh-CN" hreflang="zh-CN" rel="alternate">
+  <link href="https://opensea.io/zh-TW" hreflang="zh-TW" rel="alternate">
+  <link href="https://opensea.io/de-DE" hreflang="de-DE" rel="alternate">
+  <link href="https://opensea.io/es" hreflang="es" rel="alternate">
+  <link href="https://opensea.io" rel="canonical">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link href="https://api.opensea.io" rel="preconnect">
+  <link href="https://opensea.io/__api/features/proxy" rel="preconnect">
+  <link href="https://www.google-analytics.com" rel="preconnect">
+  <link href="https://openseauserdata.com" rel="preconnect">
+  <link href="https://static.opensea.io" rel="preconnect">
+  <link href="https://lh3.googleusercontent.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="/static/images/favicon/180x180.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/static/images/favicon/32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/static/images/favicon/16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="https://static.opensea.io/favicon/site.webmanifest" rel="manifest">
+  <link href="/static/images/favicon/favicon.ico" rel="shortcut icon">
+  <link rel="preload" as="image"
+    imagesrcset="https://i.seadn.io/gcs/static/promocards/fragile%20animals%20homecard%20squooshed.jpg?auto=format&amp;w=828 1x, https://i.seadn.io/gcs/static/promocards/fragile%20animals%20homecard%20squooshed.jpg?auto=format&amp;w=1920 2x">
+  <link rel="preload" as="image"
+    imagesrcset="https://i.seadn.io/gcs/static/promocards/drip%20ballers%20homecard.png?auto=format&amp;w=828 1x, https://i.seadn.io/gcs/static/promocards/drip%20ballers%20homecard.png?auto=format&amp;w=1920 2x">
+  <link rel="preload" as="image"
+    imagesrcset="https://i.seadn.io/gcs/files/c6af7968009d1f4d88f82a02eea30cee.png?auto=format&amp;w=828 1x, https://i.seadn.io/gcs/files/c6af7968009d1f4d88f82a02eea30cee.png?auto=format&amp;w=1920 2x">
+  <link rel="preload" as="image"
+    imagesrcset="https://i.seadn.io/gcs/static/promocards/shabangrs%20homecard.png?auto=format&amp;w=828 1x, https://i.seadn.io/gcs/static/promocards/shabangrs%20homecard.png?auto=format&amp;w=1920 2x">
+  <link rel="preload" as="image" href="/static/images/learn-center//what-is-nft.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//what-is-crypto-wallet.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//what-are-gas-fees.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//how-to-buy-nft.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//how-to-create-nft.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//how-to-sell-nft.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//what-is-minting.png">
+  <link rel="preload" as="image" href="/static/images/learn-center//who-is-opensea.png">
+
+
+
+  <title>OpenSea, the largest NFT marketplace</title>
+
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -36,5 +97,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
